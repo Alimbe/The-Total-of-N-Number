@@ -1,0 +1,33 @@
+package javaapplication11;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ali
+ */
+public class JavaApplication11 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //ÚÏÏæÌãÚ ÂäåÇn ÏÑíÇİÊ
+        int InputArray ,Plus=0; 
+        System.out.println("Please Enter the size of the Numbers!! ");
+        
+        Scanner sc1=new Scanner(System.in);
+        InputArray=sc1.nextInt();
+        int[] ArraySize=new int[InputArray];
+        
+        System.out.println("Enter the Numbers :");
+        
+        for(int i = 0 ; i<InputArray ; i++)
+       {   ArraySize[i]=sc1.nextInt();
+            Plus+=ArraySize[i]; }
+            
+        System.out.print(String.format("the anser is %d !!",Plus));
+}
+ 
+}
